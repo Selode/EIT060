@@ -1,0 +1,6 @@
+Mar 03, 2016 1:06:36 PM backEnd.server main
+INFO: Started server
+Mar 03, 2016 1:06:52 PM backEnd.MessageHandler logData
+INFO: unknown:	Got message signIn
+Mar 03, 2016 1:06:52 PM backEnd.MessageHandler logData
+INFO: unknown:	Failed login attempt

@@ -1,0 +1,22 @@
+Mar 03, 2016 2:58:45 PM backEnd.server main
+INFO: Started server
+Mar 03, 2016 2:59:14 PM backEnd.MessageHandler logData
+INFO: unknown:	Got message signIn
+Mar 03, 2016 2:59:14 PM backEnd.MessageHandler logData
+INFO: 1337000001:	User Huey signed in succesfully as doctor!
+Mar 03, 2016 2:59:32 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Got message addPatient
+Mar 03, 2016 2:59:32 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Created new patient hejsanhoppsan hej
+Mar 03, 2016 3:00:43 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Got message addEntry
+Mar 03, 2016 3:00:43 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Succesfully added entry 4
+Mar 03, 2016 3:00:54 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Got message getJournal
+Mar 03, 2016 3:00:54 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Returned entries for hejsanhoppsan hej 
+Mar 03, 2016 3:01:07 PM backEnd.MessageHandler logData
+INFO: 1337000001:	Got message signOut
+Mar 03, 2016 3:01:07 PM backEnd.MessageHandler signOut
+INFO: Huey signed out

@@ -1,0 +1,58 @@
+Token				Command					Data
+--------------------------------------------
+Not null		addPerson				name - name of person to list
+														idnr - personnummer of person
+														security - security level [0 = patient, 1 = nurse, 2 = doctor, 3 = government]
+Return: error 0 = Succesfully added person, data: Null
+				error 1 = Failed to add person, data:
+																				message: String, message describing error
+
+
+Not null		addEntry				text - data of entry
+														nurse - uid of nurse
+														doctor - uid of doctor
+														journal - personnummer of person that it belongs to
+Return: error 0 = Succesfully added entry, data: Null
+				error 1 = Failed to add entry, data:
+																			 message: String, message describing error
+
+
+Not null		changeEntry			id - id of entry to change
+														[entries to change, same as addEntry]
+Return: error 0 = Succesfully changed entry, data: Null
+				error 1 = Failed to change entry, data:
+																			 		message: String, message describing error
+
+
+Not null		deleteEntry			id - id of entry to delete
+Return: error 0 = Succesfully delete entry, data: Null
+				error 1 = Failed to delete entry, data:
+																			 		message: String, message describing error
+
+
+Not null		deleteJournal		id - personnummer of persons journal to delete
+Return: error 0 = Succesfully deleted all entries, data: Null
+				error 1 = Failed to delete all entries, data:
+																			 					message: String, message describing error
+
+
+Not null		getJournal			name - name of person
+Return: error 0 = Succesfully retrieved journal, data: array of objects with keys as add entry
+				error 1 = Failed to retrieve journal, data:
+																			 				message: String, message describing error
+
+
+Not null		signIn					usr - username of person
+														pass - password of person
+Return:
+
+
+Not null		signOut					token - token to sign out
+Return:
+
+
+Json keys for sending to server
+token, command, data
+
+Json keys for responses from server
+error, data

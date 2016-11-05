@@ -1,0 +1,54 @@
+Question A: It is used to create the CA serial number file.
+
+Question B: To generate a version 3 certificate you can use the openssl flag -extensions and set its value to v3_ca as "-extensions v3_ca".
+
+Question C: They provide a way to add extra data to a certificate. This could for example be settings, comments or special restrictions.
+
+Question D: They could have been copied. They are created in the exact same way, and for this task, they also contained the exact same information.
+
+Question E: The passwords for the truststores and keystores are used to protect the actual certificates that are in the stores. The other two passwords,
+the passwords for the actual certificates are used for signing requests or when the certificates needs to actually be used.
+
+Question F: It answers the sent text reversed.
+
+Question G: It forces connecting clients to authenticate themselves.
+
+Question H:
+
+The client sending a message:
+
+args[0] = localhost
+args[1] = 9876
+
+socket before handshake:
+fa91f44[SSL_NULL_WITH_NULL_NULL: Socket[addr=localhost/127.0.0.1,port=9876,localport=62589]]
+
+certificate name (subject DN field) on certificate received from server:
+CN=MyServer, OU=eit060, O=LTH, L=Lund, ST=Sverige, C=SE
+
+Issuer name: CN=CA, OU=eit060, O=LTH, L=Lund, ST=Some-State, C=SE
+Serial number: 10804661203913482293
+socket after handshake:
+fa91f44[TLS_DHE_DSS_WITH_AES_128_CBC_SHA: Socket[addr=localhost/127.0.0.1,port=9876,localport=62589]]
+
+secure connection established
+
+
+>This is a message
+sending 'This is a message' to server...done
+received 'egassem a si sihT' from server
+
+>
+
+The server receiving a message:
+
+Server Started
+
+client connected
+client name (cert subject DN field): CN="Simon Rydebrink (dat14sry)/Sebastian Karabeleski (dat12sk1)/Alexander  Najafi (elt12ana)/Tobias Mahl (har11tma)", OU=eit060, O=LTH, L=Lund, ST=Sverige, C=SE
+1 concurrent connection(s)
+
+Issuer name: CN=CA, OU=eit060, O=LTH, L=Lund, ST=Some-State, C=SE
+Serial number: 10804661203913482292
+received 'This is a message' from client
+sending 'egassem a si sihT' to client...done
